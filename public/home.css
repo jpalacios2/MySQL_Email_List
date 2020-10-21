@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/*For the body*/
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200&display=swap');
+/*For the error-message*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('https://images.pexels.com/photos/6858/landscape-nature-forest-trees.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+    height: 100vh;
+
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.email-form{
+    display: inline-block;
+    background-color: rgb(173, 173, 173);
+    border: solid black .5px;
+    box-shadow: 2px 2px 8px 2px;
+    opacity: 70%;
+    border-radius: 12px;
+    width: 730px;
+    height: 100px;
+}
+.top-wrapper{
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 8% 0;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0));
+    text-shadow: 2px 2px 2px black;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bolder;
+}
+
+.top-wrapper > h1{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    font-weight: 100;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .form {
+      line-height: 2.5;
+      border: none;
+      border-bottom: 3px solid #ebebeb;
+      font-size: 1.9em;
+      padding: 5px 10px;
+      background: transparent;
+  }
+  
+  button {
+      display: inline-block;
+      position: relative;
+      border: none;
+      border:3px solid white;
+      font-size: 1.9em;
+      color: rgb(0, 0, 0);
+      padding: 5px;
+      margin: 0 auto;
+      margin-bottom: 0;
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+      
+  }
+
+  .error-message{
+    font-family: 'Nanum Pen Script', cursive;
+    color: red;
+    background-color: yellow;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+    visibility: hidden;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,0.8);
+  }
+  input[type=text]:focus {
+    outline: none;
+  }
+  
+  button:hover{
+    opacity: 1;
+    border: rgb(245, 255, 191) solid 1px;
+    box-shadow: 2px 2px 8px 2px rgba(0, 136, 23, 0.479);
+  }

@@ -1,0 +1,26 @@
+<head>
+    <title>MySQL Email List</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+
+
+<div class="top-wrapper">
+    
+    <h1>MySQL Email List</h1>
+
+    <p class="lead">Enter any email to add to the database and increase the count,
+            <stron><%=data%><stron> in counting.
+    </p>
+
+</div>
+
+<form method="POST" action="/register" class="email-form">
+    <input class="form" id="email-input" type="text" name="email" placeholder="Enter your email">
+    <button id="submit-btn">SUBMIT</button>
+</form>
+<div class="error-message">
+    <p>ERROR, please enter a valid email adress!</p>
+</div>
+
+<script src="/reg_expression.js"></script>
